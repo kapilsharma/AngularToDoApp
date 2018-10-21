@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">ToDo</th>
+        <th scope="col">Category</th>
+        <th scope="col">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let toDo of toDos">
+        <td><input type="checkbox" class="form-control" [checked]="toDo.done"></td>
+        <td>{{ toDo.name }}</td>
+        <td>{{ toDo.category }}</td>
+        <td>
+          <button class="btn btn-info mr-2">Edit</button>
+          <button class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
