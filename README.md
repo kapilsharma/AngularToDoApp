@@ -14,6 +14,10 @@ Latest code, at the end of course project.
 
 > It is recommended to read `README.md` file from master branch only.
 
+### v0.1.4
+
+Code committed at the end of section 5.5, Local Reference
+
 ### v0.1.3
 
 Code committed at the end of section 5.4, ng-content

@@ -7,9 +7,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  name: string;
-  category: string;
-
   @Output() toDoAdded = new EventEmitter<{
     name: string,
     category: string
@@ -20,10 +17,10 @@ export class CreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  onAddToDo() {
+  onAddToDo(name: HTMLInputElement, category: HTMLSelectElement) {
     this.toDoAdded.emit({
-      name: this.name,
-      category: this.category
+      name: (<HTMLInputElement>name).value,
+      category: (<HTMLSelectElement>category).value
     });
   }
 }
