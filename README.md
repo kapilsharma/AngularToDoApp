@@ -14,6 +14,10 @@ Latest code, at the end of course project.
 
 > It is recommended to read `README.md` file from master branch only.
 
+### v0.1.3
+
+Code committed at the end of section 5.4, ng-content
+
 ### v0.1.2
 
 Code committed at the end of Section 5.3, Custom Event Binding.
