@@ -1,27 +1,27 @@
 # ToDoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+## Change log
 
-## Development server
+> We started maintaining change log from `v0.1.2`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Instead of creating tags of versions, we have created branches so that people learning angular can easily switch branches and get the code done till a particular section of corporate training and ebook. This also make it easy to get difference (through git diff command) between branches (New code added in particular section).
 
-## Code scaffolding
+Thus, versions defined below are branches, not tags.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### master & v1.0.0
 
-## Build
+Latest code, at the end of course project.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+> It is recommended to read `README.md` file from master branch only.
 
-## Running unit tests
+### v0.1.2
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Code committed at the end of Section 5.3, Custom Event Binding.
 
-## Running end-to-end tests
+### v0.1.1
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Code committed at the end of Section 5.2, Custom Property Binding.
 
-## Further help
+### v0.1.0
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Code completed in Chapter 4, Course Project.

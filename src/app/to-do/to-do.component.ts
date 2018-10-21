@@ -50,6 +50,17 @@ export class ToDoComponent implements OnInit {
     }
   ];
 
+  onToDoAdded(toDo: {
+    name: string,
+    category: string
+  }) {
+    this.toDos.push({
+      name: toDo.name,
+      done: false,
+      category: toDo.category
+    });
+  }
+
   constructor() { }
 
   ngOnInit() { }
