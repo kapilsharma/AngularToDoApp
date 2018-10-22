@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-create',
@@ -6,6 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit {
+  @ViewChild('name') nameInTS: ElementRef;
+  @ViewChild('category') categoryInTS: ElementRef;
 
   @Output() toDoAdded = new EventEmitter<{
     name: string,
@@ -17,10 +19,10 @@ export class CreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  onAddToDo(name: HTMLInputElement, category: HTMLSelectElement) {
+  onAddToDo() {
     this.toDoAdded.emit({
-      name: (<HTMLInputElement>name).value,
-      category: (<HTMLSelectElement>category).value
+      name: (<HTMLInputElement>this.nameInTS.nativeElement).value,
+      category: (<HTMLInputElement>this.categoryInTS.nativeElement).value
     });
   }
 }
