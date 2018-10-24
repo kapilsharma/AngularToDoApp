@@ -13,9 +13,9 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let toDo of toDos">
+      <tr *ngFor="let toDo of toDos;">
         <td><input type="checkbox" class="form-control" [checked]="toDo.done"></td>
-        <td>{{ toDo.name }}</td>
+        <td [ngClass]="toDo.done ? '' : 'bold'">{{ toDo.name }}</td>
         <td>{{ toDo.category }}</td>
         <td>
           <button class="btn btn-info mr-2">Edit</button>
@@ -26,5 +26,3 @@
     </table>
   </div>
 </div>
-
-
