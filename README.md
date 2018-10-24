@@ -16,7 +16,7 @@ Latest code, at the end of course project.
 
 ### v6.4.3
 
-Code committed at the end of section 6.4.3 - UsingelsepartinngIf.
+Code committed at the end of section 6.4.3 - Using else part with ngIf.
 
 ### v6.4.2
 
