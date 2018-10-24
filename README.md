@@ -14,6 +14,10 @@ Latest code, at the end of course project.
 
 > It is recommended to read `README.md` file from master branch only.
 
+### v6.4.2
+
+Code committed at the end of section 6.4.2 - ngIf.
+
 ### v6.3.1
 
 Code committed at the end of section 6.3.1 - ngClass.
