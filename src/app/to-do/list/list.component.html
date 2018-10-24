@@ -19,7 +19,10 @@
         <td>{{ toDo.category }}</td>
         <td>
           <button class="btn btn-info mr-2">Edit</button>
-          <button class="btn btn-danger" *ngIf="toDo.done">Delete</button>
+          <button class="btn btn-danger" *ngIf="toDo.done; else incompleteToDo">Delete</button>
+          <ng-template #incompleteToDo>
+            <span>Finish ToDo</span>
+          </ng-template>
         </td>
       </tr>
       </tbody>
