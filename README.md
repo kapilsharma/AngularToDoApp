@@ -14,6 +14,10 @@ Latest code, at the end of course project.
 
 > It is recommended to read `README.md` file from master branch only.
 
+### v7.1.0
+
+Code committed at the end of section 7.1 - Models.
+
 ### v6.4.3
 
 Code committed at the end of section 6.4.3 - Using else part with ngIf.

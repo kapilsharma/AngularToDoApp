@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ToDo } from '../models/ToDo';
+
 @Component({
   selector: 'app-to-do',
   templateUrl: './to-do.component.html',
@@ -7,48 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToDoComponent implements OnInit {
 
-  toDos = [
-    {
-      'name': 'Angular Session 1',
-      'done': true,
-      'category': 'Angular'
-    },
-    {
-      'name': 'Angular Session 1 Assignment',
-      'done': true,
-      'category': 'Angular'
-    },
-    {
-      'name': 'Angular Session 2',
-      'done': true,
-      'category': 'Angular'
-    },
-    {
-      'name': 'Angular Session 2 Assignment',
-      'done': true,
-      'category': 'Angular'
-    },
-    {
-      'name': 'Angular Session 3',
-      'done': true,
-      'category': 'Angular'
-    },
-    {
-      'name': 'Angular Session 3 Assignment',
-      'done': true,
-      'category': 'Angular'
-    },
-    {
-      'name': 'Schedule Angular meet up 2',
-      'done': false,
-      'category': 'PHPReboot'
-    },
-    {
-      'name': 'Update Angular quick notes EBook',
-      'done': false,
-      'category': 'EBooks'
-    }
-  ];
+  toDos = [];
 
   onToDoAdded(toDo: {
     name: string,
@@ -61,8 +22,16 @@ export class ToDoComponent implements OnInit {
     });
   }
 
-  constructor() { }
+  constructor() {
+    this.toDos.push(new ToDo('Angular Session 1', true, 'Angular'));
+    this.toDos.push(new ToDo('Angular Session 1 Assignment', true, 'Angular'));
+    this.toDos.push(new ToDo('Angular Session 2', true, 'Angular'));
+    this.toDos.push(new ToDo('Angular Session 2 Assignment', true, 'Angular'));
+    this.toDos.push(new ToDo('Angular Session 3', true, 'Angular'));
+    this.toDos.push(new ToDo('Angular Session 3 Assignment', true, 'Angular'));
+    this.toDos.push(new ToDo('Schedule Angular meet up 2', false, 'PHPReboot'));
+    this.toDos.push(new ToDo('Update Angular quick notes EBook', false, 'EBooks'));
+  }
 
   ngOnInit() { }
-
 }
