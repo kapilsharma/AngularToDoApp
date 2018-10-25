@@ -9,7 +9,7 @@ import { ToDo } from '../models/ToDo';
 })
 export class ToDoComponent implements OnInit {
 
-  toDos = [];
+  toDos: Array<ToDo> = [];
 
   onToDoAdded(toDo: {
     name: string,
