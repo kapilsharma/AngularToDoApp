@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ToDo } from '../models/ToDo';
+import { ToDoService } from '../services/to-do.service';
 
 @Component({
   selector: 'app-to-do',
@@ -15,22 +16,11 @@ export class ToDoComponent implements OnInit {
     name: string,
     category: string
   }) {
-    this.toDos.push({
-      name: toDo.name,
-      done: false,
-      category: toDo.category
-    });
+    this.toDoService.addToDo(toDo.name, toDo.category);
   }
 
-  constructor() {
-    this.toDos.push(new ToDo('Angular Session 1', true, 'Angular'));
-    this.toDos.push(new ToDo('Angular Session 1 Assignment', true, 'Angular'));
-    this.toDos.push(new ToDo('Angular Session 2', true, 'Angular'));
-    this.toDos.push(new ToDo('Angular Session 2 Assignment', true, 'Angular'));
-    this.toDos.push(new ToDo('Angular Session 3', true, 'Angular'));
-    this.toDos.push(new ToDo('Angular Session 3 Assignment', true, 'Angular'));
-    this.toDos.push(new ToDo('Schedule Angular meet up 2', false, 'PHPReboot'));
-    this.toDos.push(new ToDo('Update Angular quick notes EBook', false, 'EBooks'));
+  constructor(private toDoService: ToDoService) {
+    this.toDos = this.toDoService.toDos;
   }
 
   ngOnInit() { }
