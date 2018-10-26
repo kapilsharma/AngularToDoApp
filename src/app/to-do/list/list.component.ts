@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ToDoService} from '../../services/to-do.service';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  @Input() toDos;
-
-  constructor() { }
+  constructor(public toDoService: ToDoService) {
+  }
 
   ngOnInit() {
   }

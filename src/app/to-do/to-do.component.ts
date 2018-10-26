@@ -6,11 +6,10 @@ import { ToDoService } from '../services/to-do.service';
 @Component({
   selector: 'app-to-do',
   templateUrl: './to-do.component.html',
-  styleUrls: ['./to-do.component.css']
+  styleUrls: ['./to-do.component.css'],
+  providers: [ToDoService]
 })
 export class ToDoComponent implements OnInit {
-
-  toDos: Array<ToDo> = [];
 
   onToDoAdded(toDo: {
     name: string,
@@ -19,9 +18,7 @@ export class ToDoComponent implements OnInit {
     this.toDoService.addToDo(toDo.name, toDo.category);
   }
 
-  constructor(private toDoService: ToDoService) {
-    this.toDos = this.toDoService.toDos;
-  }
+  constructor(private toDoService: ToDoService) { }
 
   ngOnInit() { }
 }
