@@ -14,6 +14,10 @@ Latest code, at the end of course project.
 
 > It is recommended to read `README.md` file from master branch only.
 
+### v7.3.3
+
+Code committed at the end of section 7.3.3 - ToDoService-How to get new instance of service.
+
 ### v7.3.0
 
 Code committed at the end of section 7.1 - ToDoService.
