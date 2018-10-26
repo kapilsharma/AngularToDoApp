@@ -4,15 +4,19 @@
 
 > We started maintaining change log from `v0.1.2`.
 
-> Instead of creating tags of versions, we have created branches so that people learning angular can easily switch branches and get the code done till a particular section of corporate training and ebook. This also make it easy to get difference (through git diff command) between branches (New code added in particular section).
+> Instead of creating tags of versions, we have created branches so that people learning angular can easily switch branches and get the code done till a particular section of corporate training and ebook. This also make it easy to get difference (through git diff command) between branches (New code added in a particular section).
 >
 > Thus, versions defined below are branches, not tags.
 
-### master & v1.0.0
+### master
 
 Latest code, at the end of course project.
 
 > It is recommended to read `README.md` file from master branch only.
+
+### v7.4.1
+
+Code committed at the end of section 7.4.1 - Data Service for custom Event Binding
 
 ### v7.4.0
 
@@ -48,7 +52,7 @@ Semantic Version is in form `major.minor.patch`.
 
 Till chapter 5, 'Components continued', we were following semantic version and working only on minor version, since code is not complete.
 
-However, code is actually complete for a chapter you are studying. Therefor from chapter 6, we will work as `chapter.section.subsection`. Therefor, next version after `v0.1.5` will be `v6.1.0`.
+However, code is actually complete for a chapter you are studying. Therefor from chapter 6, we will work as `chapter.section.subsection`. Therefor, next version after `v0.1.5` will be `v6.1.0` (Actually v6.3.1, which represent first code in chapter 6 was committed after section 6.3.1).
 
 ### v0.1.5
 

@@ -11,14 +11,15 @@ import { ToDoService } from '../services/to-do.service';
 })
 export class ToDoComponent implements OnInit {
 
-  onToDoAdded(toDo: {
-    name: string,
-    category: string
-  }) {
-    this.toDoService.addToDo(toDo.name, toDo.category);
-  }
+  // onToDoAdded(toDo: {
+  //   name: string,
+  //   category: string
+  // }) {
+  //   this.toDoService.addToDo(toDo.name, toDo.category);
+  // }
 
-  constructor(private toDoService: ToDoService) { }
+  // constructor(private toDoService: ToDoService) { }
+  constructor() {}
 
   ngOnInit() { }
 }
